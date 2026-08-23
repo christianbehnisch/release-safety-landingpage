@@ -10,7 +10,7 @@ const isUserPage = repo?.endsWith(".github.io");
 const basePath = repo && !isUserPage ? `/${repo}` : "";
 const siteUrl = owner
   ? `https://${owner}.github.io${basePath}/`
-  : "https://christianflying.github.io/release-safety-landingpage/";
+  : "https://christianbehnisch.github.io/release-safety-landingpage/";
 const englishUrl = new URL("en.html", siteUrl).toString();
 
 export const metadata: Metadata = {
