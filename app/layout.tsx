@@ -8,7 +8,8 @@ const isUserPage = repo?.endsWith(".github.io");
 const basePath = repo && !isUserPage ? `/${repo}` : "";
 const siteUrl = owner
   ? `https://${owner}.github.io${basePath}/`
-  : "http://localhost:3000/";
+  : "https://christianflying.github.io/release-safety-landingpage/";
+const englishUrl = new URL("en.html", siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -23,6 +24,13 @@ export const metadata: Metadata = {
     "Testautomatisierung",
   ],
   authors: [{ name: "Release Safety" }],
+  alternates: {
+    canonical: siteUrl,
+    languages: {
+      "de-DE": siteUrl,
+      "en-US": englishUrl,
+    },
+  },
   openGraph: {
     title: "Release-Sicherheit für SaaS",
     description: "Kritische User Journeys. Automatisch geprüft.",
@@ -56,7 +64,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'if(/\\/en(?:\\.html)?\\/?$/.test(location.pathname)){document.documentElement.lang="en"}',
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

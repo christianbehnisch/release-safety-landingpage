@@ -1,5 +1,303 @@
-const contactHref =
-  "mailto:christian.behnisch@outlook.de?subject=Anfrage%20Release-Safety-Pilot";
+const copy = {
+  de: {
+    brandAria: "Release Safety – Startseite",
+    navAria: "Hauptnavigation",
+    languageAria: "Sprache wählen",
+    nav: [
+      ["#problem", "Warum E2E?"],
+      ["#ablauf", "Ablauf"],
+      ["#pilot", "Pilot"],
+      ["#faq", "FAQ"],
+    ],
+    headerCta: "Pilot besprechen",
+    eyebrow: "Managed E2E Testing für SaaS",
+    heroTitle: "Ihre wichtigsten Kundenprozesse.",
+    heroEmphasis: "Bei jedem Release geprüft.",
+    heroLead:
+      "Ich automatisiere die kritischen User Journeys Ihrer SaaS-Anwendung und integriere sie in Ihren Release-Prozess – auf Wunsch ohne Zugriff auf Ihren Anwendungscode.",
+    heroCta: "Pilotprojekt anfragen",
+    heroLink: "So funktioniert es",
+    trustAria: "Vorteile",
+    trust: [
+      "In 2–4 Wochen startklar",
+      "Playwright-basiert",
+      "Tests bleiben übertragbar",
+    ],
+    portraitAria: "Persönlicher Ansprechpartner",
+    portraitAlt:
+      "Persönlicher Ansprechpartner für automatisierte Release-Absicherung",
+    releaseCheck: "Release Check",
+    releaseStatus: "Bestanden",
+    releaseCopy: "Alle kritischen Journeys laufen.",
+    releaseJourneys: "3 / 3 Journeys",
+    photoCaption: "Persönlich betreut",
+    photoCaptionSmall: "von Setup bis Fehleranalyse",
+    valueAria: "Leistungsmerkmale",
+    values: [
+      ["Black-Box möglich", "Keine Freigabe des Sourcecodes nötig"],
+      ["Direkt im Prozess", "Ausführung bei jedem relevanten Release"],
+      ["Fehler mit Kontext", "Screenshots, Videos und Traces statt Rätselraten"],
+    ],
+    problemKicker: "Das Problem",
+    problemTitle: "Manuelle Regression kostet Zeit. Produktionsfehler kosten",
+    problemEmphasis: " Vertrauen.",
+    problemCopy:
+      "Vor jedem Release klicken Entwickler dieselben Abläufe durch – oder hoffen, dass Unit Tests genug abdecken. Genau zwischen diesen Ebenen entstehen die Fehler, die Kunden tatsächlich bemerken.",
+    problemQuote:
+      "„Funktionieren Login, Onboarding, Kernprozess und Export nach dem nächsten Deployment wirklich noch?“",
+    pains: [
+      [
+        "↻",
+        "Wiederkehrende Handarbeit",
+        "Entwicklungszeit fließt vor jedem Release in dieselben Klicktests.",
+      ],
+      [
+        "!",
+        "Regressionen in Produktion",
+        "Ein kleiner UI-Change unterbricht einen geschäftskritischen Ablauf.",
+      ],
+      [
+        "?",
+        "Unklare Fehlermeldungen",
+        "Ein roter Build zeigt den Fehler, aber nicht die verständliche Ursache.",
+      ],
+    ],
+    journeyKicker: "So wird Sicherheit konkret",
+    journeyTitle: "Ein echter Geschäftsprozess. Durchgängig abgesichert.",
+    journeyIntro:
+      "Beispiel Rechnungs-SaaS: Jeder Schritt wird ausgeführt und fachlich geprüft – nicht nur angeklickt.",
+    journeyAria: "Beispiel User Journey",
+    journeys: [
+      ["01", "Login", "Testnutzer authentifiziert"],
+      ["02", "Kunde anlegen", "Daten korrekt gespeichert"],
+      ["03", "Rechnung erstellen", "Summe & Steuer geprüft"],
+      ["04", "Versenden", "Status aktualisiert"],
+      ["05", "PDF prüfen", "Dokument verfügbar"],
+    ],
+    deliverables: [
+      [
+        "01 · Automatisierung",
+        "Stabile Tests statt Klick-Skripte",
+        "Robuste Selektoren, reproduzierbare Testdaten und fachliche Assertions für die wirklich relevanten Ergebnisse.",
+      ],
+      [
+        "02 · Integration",
+        "Ein Release-Signal, das zählt",
+        "Die Journeys laufen manuell, per Webhook oder in Ihrer bestehenden CI/CD-Pipeline – passend zu Ihrem Prozess.",
+      ],
+      [
+        "03 · Diagnose",
+        "Verstehen, was schiefging",
+        "Bei Fehlern liefern Trace, Screenshot und Video sofort den nötigen Kontext für eine schnelle Entscheidung.",
+      ],
+    ],
+    pilotEyebrow: "Der kontrollierte Einstieg",
+    pilotTitle: "Release-Safety-Pilot",
+    pilotIntro:
+      "Kein Großprojekt. Wir starten mit den drei Prozessen, deren Ausfall Ihre Kunden und Ihr Team am stärksten treffen würde.",
+    pilotItems: [
+      "Auswahl der drei kritischsten User Journeys",
+      "Automatisierung mit Playwright",
+      "Ausführung gegen Ihre Testumgebung",
+      "Screenshots und Trace bei Fehlern",
+      "Dokumentation und Abschlussgespräch",
+    ],
+    pilotFacts: [
+      ["Umfang", "3 Journeys"],
+      ["Zeitrahmen", "2–4 Wochen"],
+      ["Investition", "2.000 €"],
+    ],
+    pilotCta: "Pilot unverbindlich besprechen",
+    fitKicker: "Guter Fit?",
+    fitTitle: "Für SaaS-Teams, die schnell releasen – aber nicht blind.",
+    fitItems: [
+      "Sie betreiben eine laufende SaaS-Webanwendung.",
+      "Ihr Team releast mindestens mehrmals im Monat.",
+      "Regressionstests werden teilweise manuell ausgeführt.",
+      "Eine große eigene QA-Abteilung gibt es noch nicht.",
+      "Drei bis zehn zentrale Kundenprozesse sind klar benennbar.",
+    ],
+    faqKicker: "Häufige Fragen",
+    faqTitle: "Klarheit vor dem ersten Test.",
+    faqs: [
+      [
+        "Brauchen Sie Zugriff auf unseren Sourcecode?",
+        "Nicht zwingend. Für Black-Box-Tests reichen häufig eine geeignete Testumgebung, stabile Testkonten und ein definierter Weg für Testdaten. Für die CI/CD-Anbindung kann eine kleine Konfiguration durch Ihr Team nötig sein.",
+      ],
+      [
+        "Was passiert, wenn sich die Oberfläche ändert?",
+        "Änderungen gehören zum Betrieb einer E2E-Suite. Im laufenden Service werden betroffene Tests angepasst und Fehlalarme von echten Regressionen getrennt.",
+      ],
+      [
+        "Blockieren die Tests automatisch unser Deployment?",
+        "Nur wenn Sie das möchten. Zu Beginn empfiehlt sich meist ein informatives Release-Signal. Sobald die Journeys stabil laufen, können ausgewählte kritische Tests als echtes Release Gate dienen.",
+      ],
+      [
+        "Gehören uns die erstellten Tests?",
+        "Ja. Die Tests basieren auf Standard-Playwright und können dokumentiert übergeben oder in Ihrer eigenen Infrastruktur betrieben werden.",
+      ],
+    ],
+    contactEyebrow: "Nächster Schritt",
+    contactTitle: "Welche drei Prozesse dürfen bei Ihrem nächsten Release",
+    contactEmphasis: " nicht ausfallen?",
+    contactCopy:
+      "In einem kurzen Erstgespräch klären wir, ob sich Ihre Anwendung für einen Release-Safety-Pilot eignet.",
+    contactCta: "Gespräch anfragen",
+    contactSmall: "Unverbindlich · 30 Minuten · Keine Verkaufspräsentation",
+    contactSubject: "Anfrage Release-Safety-Pilot",
+    footer: "Managed E2E Testing für SaaS · Made in Germany",
+  },
+  en: {
+    brandAria: "Release Safety – Home",
+    navAria: "Main navigation",
+    languageAria: "Choose language",
+    nav: [
+      ["#problem", "Why E2E?"],
+      ["#ablauf", "Process"],
+      ["#pilot", "Pilot"],
+      ["#faq", "FAQ"],
+    ],
+    headerCta: "Discuss a pilot",
+    eyebrow: "Managed E2E Testing for SaaS",
+    heroTitle: "Your most important customer journeys.",
+    heroEmphasis: "Tested with every release.",
+    heroLead:
+      "I automate the critical user journeys in your SaaS application and integrate them into your release process – without access to your application source code if preferred.",
+    heroCta: "Request a pilot project",
+    heroLink: "How it works",
+    trustAria: "Benefits",
+    trust: [
+      "Ready in 2–4 weeks",
+      "Built with Playwright",
+      "Tests remain portable",
+    ],
+    portraitAria: "Your personal point of contact",
+    portraitAlt:
+      "Personal contact for automated release testing",
+    releaseCheck: "Release Check",
+    releaseStatus: "Passed",
+    releaseCopy: "All critical journeys are running.",
+    releaseJourneys: "3 / 3 journeys",
+    photoCaption: "Personally managed",
+    photoCaptionSmall: "from setup to root-cause analysis",
+    valueAria: "Service benefits",
+    values: [
+      ["Black-box capable", "No source code access required"],
+      ["Built into your process", "Runs with every relevant release"],
+      ["Errors with context", "Screenshots, videos and traces instead of guesswork"],
+    ],
+    problemKicker: "The problem",
+    problemTitle: "Manual regression costs time. Production bugs cost",
+    problemEmphasis: " trust.",
+    problemCopy:
+      "Before each release, developers repeat the same manual checks – or hope unit tests cover enough. The defects customers actually notice often emerge in the gap between those two layers.",
+    problemQuote:
+      "“Will login, onboarding, the core workflow and export still work after the next deployment?”",
+    pains: [
+      [
+        "↻",
+        "Repetitive manual work",
+        "Development time is spent on the same click-through tests before every release.",
+      ],
+      [
+        "!",
+        "Regressions in production",
+        "A small UI change breaks a business-critical workflow.",
+      ],
+      [
+        "?",
+        "Unclear failure reports",
+        "A red build signals a problem but not a clear, actionable cause.",
+      ],
+    ],
+    journeyKicker: "Confidence made concrete",
+    journeyTitle: "One real business process. Protected end to end.",
+    journeyIntro:
+      "Example from invoicing SaaS: every step is executed and its business outcome verified – not merely clicked.",
+    journeyAria: "Example user journey",
+    journeys: [
+      ["01", "Log in", "Test user authenticated"],
+      ["02", "Create customer", "Data saved correctly"],
+      ["03", "Create invoice", "Amount & tax verified"],
+      ["04", "Send", "Status updated"],
+      ["05", "Check PDF", "Document available"],
+    ],
+    deliverables: [
+      [
+        "01 · Automation",
+        "Reliable tests, not click scripts",
+        "Robust selectors, reproducible test data and business-level assertions for the outcomes that truly matter.",
+      ],
+      [
+        "02 · Integration",
+        "A release signal that matters",
+        "Journeys run manually, by webhook or in your existing CI/CD pipeline – aligned with your process.",
+      ],
+      [
+        "03 · Diagnosis",
+        "Understand what went wrong",
+        "When a test fails, traces, screenshots and video provide the context needed for a quick decision.",
+      ],
+    ],
+    pilotEyebrow: "A controlled first step",
+    pilotTitle: "Release Safety Pilot",
+    pilotIntro:
+      "No major project. We start with the three processes whose failure would affect your customers and team the most.",
+    pilotItems: [
+      "Selection of the three most critical user journeys",
+      "Automation with Playwright",
+      "Execution against your test environment",
+      "Screenshots and traces when tests fail",
+      "Documentation and final review",
+    ],
+    pilotFacts: [
+      ["Scope", "3 journeys"],
+      ["Timeline", "2–4 weeks"],
+      ["Investment", "€2,000"],
+    ],
+    pilotCta: "Discuss a pilot without obligation",
+    fitKicker: "A good fit?",
+    fitTitle: "For SaaS teams that release quickly – without flying blind.",
+    fitItems: [
+      "You operate a live SaaS web application.",
+      "Your team releases at least several times a month.",
+      "Regression tests are still performed partly by hand.",
+      "You do not yet have a large in-house QA team.",
+      "You can identify three to ten central customer workflows.",
+    ],
+    faqKicker: "Frequently asked questions",
+    faqTitle: "Clarity before the first test.",
+    faqs: [
+      [
+        "Do you need access to our source code?",
+        "Not necessarily. For black-box tests, a suitable test environment, stable test accounts and a defined way to create test data are often enough. Your team may need to add a small configuration for CI/CD integration.",
+      ],
+      [
+        "What happens when the interface changes?",
+        "Change is part of operating an E2E suite. In the ongoing service, affected tests are updated and false alarms are separated from real regressions.",
+      ],
+      [
+        "Do the tests automatically block our deployment?",
+        "Only if you want them to. At first, an informative release signal is usually best. Once the journeys are stable, selected critical tests can become a true release gate.",
+      ],
+      [
+        "Do we own the tests that are created?",
+        "Yes. The tests use standard Playwright and can be documented and handed over or run in your own infrastructure.",
+      ],
+    ],
+    contactEyebrow: "Next step",
+    contactTitle: "Which three processes must not fail with your next release",
+    contactEmphasis: "?",
+    contactCopy:
+      "In a short introductory call, we will determine whether your application is a good fit for a Release Safety Pilot.",
+    contactCta: "Request a conversation",
+    contactSmall: "No obligation · 30 minutes · No sales presentation",
+    contactSubject: "Release Safety Pilot inquiry",
+    footer: "Managed E2E Testing for SaaS · Made in Germany",
+  },
+} as const;
+
+type Language = keyof typeof copy;
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
@@ -9,69 +307,88 @@ const Check = () => (
   </span>
 );
 
-export default function Home() {
+export function LandingPage({ language }: { language: Language }) {
+  const text = copy[language];
+  const isEnglish = language === "en";
+  const contactHref = `mailto:christian.behnisch@outlook.de?subject=${encodeURIComponent(text.contactSubject)}`;
+
   return (
-    <main>
+    <main lang={language}>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Release Safety – Startseite">
+        <a className="brand" href="#top" aria-label={text.brandAria}>
           <span className="brand-mark" aria-hidden="true">
             R<span>S</span>
           </span>
           <span>Release Safety</span>
         </a>
 
-        <nav aria-label="Hauptnavigation">
-          <a href="#problem">Warum E2E?</a>
-          <a href="#ablauf">Ablauf</a>
-          <a href="#pilot">Pilot</a>
-          <a href="#faq">FAQ</a>
+        <nav aria-label={text.navAria}>
+          {text.nav.map(([href, label]) => (
+            <a href={href} key={href}>
+              {label}
+            </a>
+          ))}
         </nav>
 
-        <a className="button button-small" href="#kontakt">
-          Pilot besprechen <Arrow />
-        </a>
+        <div className="header-actions">
+          <div className="language-switch" aria-label={text.languageAria}>
+            <a
+              className={!isEnglish ? "active" : undefined}
+              href="./"
+              hrefLang="de"
+              lang="de"
+              aria-current={!isEnglish ? "page" : undefined}
+            >
+              DE
+            </a>
+            <span aria-hidden="true">/</span>
+            <a
+              className={isEnglish ? "active" : undefined}
+              href="./en.html"
+              hrefLang="en"
+              lang="en"
+              aria-current={isEnglish ? "page" : undefined}
+            >
+              EN
+            </a>
+          </div>
+          <a className="button button-small" href="#kontakt">
+            {text.headerCta} <Arrow />
+          </a>
+        </div>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="live-dot" aria-hidden="true" /> Managed E2E Testing
-            für SaaS
+            <span className="live-dot" aria-hidden="true" /> {text.eyebrow}
           </p>
           <h1>
-            Ihre wichtigsten Kundenprozesse. <em>Bei jedem Release geprüft.</em>
+            {text.heroTitle} <em>{text.heroEmphasis}</em>
           </h1>
-          <p className="hero-lead">
-            Ich automatisiere die kritischen User Journeys Ihrer SaaS-Anwendung
-            und integriere sie in Ihren Release-Prozess – auf Wunsch ohne Zugriff
-            auf Ihren Anwendungscode.
-          </p>
+          <p className="hero-lead">{text.heroLead}</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#kontakt">
-              Pilotprojekt anfragen <Arrow />
+              {text.heroCta} <Arrow />
             </a>
             <a className="text-link" href="#ablauf">
-              So funktioniert es <span aria-hidden="true">↓</span>
+              {text.heroLink} <span aria-hidden="true">↓</span>
             </a>
           </div>
-          <ul className="trust-list" aria-label="Vorteile">
-            <li>
-              <Check /> In 2–4 Wochen startklar
-            </li>
-            <li>
-              <Check /> Playwright-basiert
-            </li>
-            <li>
-              <Check /> Tests bleiben übertragbar
-            </li>
+          <ul className="trust-list" aria-label={text.trustAria}>
+            {text.trust.map((item) => (
+              <li key={item}>
+                <Check /> {item}
+              </li>
+            ))}
           </ul>
         </div>
 
-        <div className="hero-visual" aria-label="Persönlicher Ansprechpartner">
+        <div className="hero-visual" aria-label={text.portraitAria}>
           <div className="portrait-frame">
             <img
               src="./portrait.jpg"
-              alt="Persönlicher Ansprechpartner für automatisierte Release-Absicherung"
+              alt={text.portraitAlt}
               width="1010"
               height="1280"
               fetchPriority="high"
@@ -81,15 +398,15 @@ export default function Home() {
 
           <div className="release-card">
             <div className="release-card-top">
-              <span>Release Check</span>
-              <span className="status-badge">Bestanden</span>
+              <span>{text.releaseCheck}</span>
+              <span className="status-badge">{text.releaseStatus}</span>
             </div>
-            <strong>Alle kritischen Journeys laufen.</strong>
+            <strong>{text.releaseCopy}</strong>
             <div className="progress-track" aria-hidden="true">
               <span />
             </div>
             <div className="release-meta">
-              <span>3 / 3 Journeys</span>
+              <span>{text.releaseJourneys}</span>
               <span>02:18 min</span>
             </div>
           </div>
@@ -97,105 +414,69 @@ export default function Home() {
           <div className="photo-caption">
             <span className="caption-line" aria-hidden="true" />
             <span>
-              Persönlich betreut
-              <small>von Setup bis Fehleranalyse</small>
+              {text.photoCaption}
+              <small>{text.photoCaptionSmall}</small>
             </span>
           </div>
         </div>
       </section>
 
-      <section className="value-strip" aria-label="Leistungsmerkmale">
-        <div>
-          <span className="value-number">01</span>
-          <p>
-            <strong>Black-Box möglich</strong>
-            Keine Freigabe des Sourcecodes nötig
-          </p>
-        </div>
-        <div>
-          <span className="value-number">02</span>
-          <p>
-            <strong>Direkt im Prozess</strong>
-            Ausführung bei jedem relevanten Release
-          </p>
-        </div>
-        <div>
-          <span className="value-number">03</span>
-          <p>
-            <strong>Fehler mit Kontext</strong>
-            Screenshots, Videos und Traces statt Rätselraten
-          </p>
-        </div>
+      <section className="value-strip" aria-label={text.valueAria}>
+        {text.values.map(([title, description], index) => (
+          <div key={title}>
+            <span className="value-number">0{index + 1}</span>
+            <p>
+              <strong>{title}</strong>
+              {description}
+            </p>
+          </div>
+        ))}
       </section>
 
       <section className="section problem-section" id="problem">
-        <div className="section-kicker">Das Problem</div>
+        <div className="section-kicker">{text.problemKicker}</div>
         <div className="problem-grid">
           <div>
             <h2>
-              Manuelle Regression kostet Zeit. Produktionsfehler kosten
-              <em> Vertrauen.</em>
+              {text.problemTitle}
+              <em>{text.problemEmphasis}</em>
             </h2>
           </div>
           <div className="problem-copy">
-            <p>
-              Vor jedem Release klicken Entwickler dieselben Abläufe durch – oder
-              hoffen, dass Unit Tests genug abdecken. Genau zwischen diesen Ebenen
-              entstehen die Fehler, die Kunden tatsächlich bemerken.
-            </p>
-            <blockquote>
-              „Funktionieren Login, Onboarding, Kernprozess und Export nach dem
-              nächsten Deployment wirklich noch?“
-            </blockquote>
+            <p>{text.problemCopy}</p>
+            <blockquote>{text.problemQuote}</blockquote>
           </div>
         </div>
 
         <div className="pain-cards">
-          <article>
-            <span className="card-icon">↻</span>
-            <h3>Wiederkehrende Handarbeit</h3>
-            <p>Entwicklungszeit fließt vor jedem Release in dieselben Klicktests.</p>
-          </article>
-          <article>
-            <span className="card-icon">!</span>
-            <h3>Regressionen in Produktion</h3>
-            <p>Ein kleiner UI-Change unterbricht einen geschäftskritischen Ablauf.</p>
-          </article>
-          <article>
-            <span className="card-icon">?</span>
-            <h3>Unklare Fehlermeldungen</h3>
-            <p>Ein roter Build zeigt den Fehler, aber nicht die verständliche Ursache.</p>
-          </article>
+          {text.pains.map(([icon, title, description]) => (
+            <article key={title}>
+              <span className="card-icon">{icon}</span>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="section journey-section" id="ablauf">
         <div className="journey-heading">
           <div>
-            <div className="section-kicker">So wird Sicherheit konkret</div>
-            <h2>Ein echter Geschäftsprozess. Durchgängig abgesichert.</h2>
+            <div className="section-kicker">{text.journeyKicker}</div>
+            <h2>{text.journeyTitle}</h2>
           </div>
-          <p>
-            Beispiel Rechnungs-SaaS: Jeder Schritt wird ausgeführt und fachlich
-            geprüft – nicht nur angeklickt.
-          </p>
+          <p>{text.journeyIntro}</p>
         </div>
 
-        <div className="journey-flow" role="list" aria-label="Beispiel User Journey">
-          {[
-            ["01", "Login", "Testnutzer authentifiziert"],
-            ["02", "Kunde anlegen", "Daten korrekt gespeichert"],
-            ["03", "Rechnung erstellen", "Summe & Steuer geprüft"],
-            ["04", "Versenden", "Status aktualisiert"],
-            ["05", "PDF prüfen", "Dokument verfügbar"],
-          ].map(([number, title, copy], index) => (
+        <div className="journey-flow" role="list" aria-label={text.journeyAria}>
+          {text.journeys.map(([number, title, description], index) => (
             <article className="journey-step" role="listitem" key={number}>
               <div className="step-top">
                 <span>{number}</span>
                 {index < 4 && <span className="step-arrow">→</span>}
               </div>
               <h3>{title}</h3>
-              <p>{copy}</p>
+              <p>{description}</p>
               <span className="step-check" aria-hidden="true">
                 ✓
               </span>
@@ -204,78 +485,42 @@ export default function Home() {
         </div>
 
         <div className="deliverables">
-          <article>
-            <span className="deliverable-label">01 · Automatisierung</span>
-            <h3>Stabile Tests statt Klick-Skripte</h3>
-            <p>
-              Robuste Selektoren, reproduzierbare Testdaten und fachliche
-              Assertions für die wirklich relevanten Ergebnisse.
-            </p>
-          </article>
-          <article>
-            <span className="deliverable-label">02 · Integration</span>
-            <h3>Ein Release-Signal, das zählt</h3>
-            <p>
-              Die Journeys laufen manuell, per Webhook oder in Ihrer bestehenden
-              CI/CD-Pipeline – passend zu Ihrem Prozess.
-            </p>
-          </article>
-          <article>
-            <span className="deliverable-label">03 · Diagnose</span>
-            <h3>Verstehen, was schiefging</h3>
-            <p>
-              Bei Fehlern liefern Trace, Screenshot und Video sofort den nötigen
-              Kontext für eine schnelle Entscheidung.
-            </p>
-          </article>
+          {text.deliverables.map(([label, title, description]) => (
+            <article key={label}>
+              <span className="deliverable-label">{label}</span>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="section pilot-section" id="pilot">
         <div className="pilot-card">
           <div className="pilot-intro">
-            <p className="eyebrow eyebrow-light">Der kontrollierte Einstieg</p>
-            <h2>Release-Safety-Pilot</h2>
-            <p>
-              Kein Großprojekt. Wir starten mit den drei Prozessen, deren Ausfall
-              Ihre Kunden und Ihr Team am stärksten treffen würde.
-            </p>
+            <p className="eyebrow eyebrow-light">{text.pilotEyebrow}</p>
+            <h2>{text.pilotTitle}</h2>
+            <p>{text.pilotIntro}</p>
           </div>
 
           <div className="pilot-details">
             <ul>
-              <li>
-                <Check /> Auswahl der drei kritischsten User Journeys
-              </li>
-              <li>
-                <Check /> Automatisierung mit Playwright
-              </li>
-              <li>
-                <Check /> Ausführung gegen Ihre Testumgebung
-              </li>
-              <li>
-                <Check /> Screenshots und Trace bei Fehlern
-              </li>
-              <li>
-                <Check /> Dokumentation und Abschlussgespräch
-              </li>
+              {text.pilotItems.map((item) => (
+                <li key={item}>
+                  <Check /> {item}
+                </li>
+              ))}
             </ul>
             <div className="pilot-facts">
-              <div>
-                <span>Umfang</span>
-                <strong>3 Journeys</strong>
-              </div>
-              <div>
-                <span>Zeitrahmen</span>
-                <strong>2–4 Wochen</strong>
-              </div>
-              <div>
-                <span>Investition</span>
-                <strong>2.000 €</strong>
-              </div>
+              {text.pilotFacts.map(([label, value]) => (
+                <div key={label}>
+                  <span>{label}</span>
+                  <strong>{value}</strong>
+                </div>
+              ))}
             </div>
             <a className="button button-light" href="#kontakt">
-              Pilot unverbindlich besprechen <Arrow />
+              {text.pilotCta} <Arrow />
             </a>
           </div>
         </div>
@@ -283,17 +528,11 @@ export default function Home() {
 
       <section className="section fit-section">
         <div>
-          <div className="section-kicker">Guter Fit?</div>
-          <h2>Für SaaS-Teams, die schnell releasen – aber nicht blind.</h2>
+          <div className="section-kicker">{text.fitKicker}</div>
+          <h2>{text.fitTitle}</h2>
         </div>
         <div className="fit-checklist">
-          {[
-            "Sie betreiben eine laufende SaaS-Webanwendung.",
-            "Ihr Team releast mindestens mehrmals im Monat.",
-            "Regressionstests werden teilweise manuell ausgeführt.",
-            "Eine große eigene QA-Abteilung gibt es noch nicht.",
-            "Drei bis zehn zentrale Kundenprozesse sind klar benennbar.",
-          ].map((item) => (
+          {text.fitItems.map((item) => (
             <div key={item}>
               <Check /> <span>{item}</span>
             </div>
@@ -303,63 +542,33 @@ export default function Home() {
 
       <section className="section faq-section" id="faq">
         <div className="faq-heading">
-          <div className="section-kicker">Häufige Fragen</div>
-          <h2>Klarheit vor dem ersten Test.</h2>
+          <div className="section-kicker">{text.faqKicker}</div>
+          <h2>{text.faqTitle}</h2>
         </div>
         <div className="faq-list">
-          <details>
-            <summary>Brauchen Sie Zugriff auf unseren Sourcecode?</summary>
-            <p>
-              Nicht zwingend. Für Black-Box-Tests reichen häufig eine geeignete
-              Testumgebung, stabile Testkonten und ein definierter Weg für
-              Testdaten. Für die CI/CD-Anbindung kann eine kleine Konfiguration
-              durch Ihr Team nötig sein.
-            </p>
-          </details>
-          <details>
-            <summary>Was passiert, wenn sich die Oberfläche ändert?</summary>
-            <p>
-              Änderungen gehören zum Betrieb einer E2E-Suite. Im laufenden
-              Service werden betroffene Tests angepasst und Fehlalarme von echten
-              Regressionen getrennt.
-            </p>
-          </details>
-          <details>
-            <summary>Blockieren die Tests automatisch unser Deployment?</summary>
-            <p>
-              Nur wenn Sie das möchten. Zu Beginn empfiehlt sich meist ein
-              informatives Release-Signal. Sobald die Journeys stabil laufen,
-              können ausgewählte kritische Tests als echtes Release Gate dienen.
-            </p>
-          </details>
-          <details>
-            <summary>Gehören uns die erstellten Tests?</summary>
-            <p>
-              Ja. Die Tests basieren auf Standard-Playwright und können
-              dokumentiert übergeben oder in Ihrer eigenen Infrastruktur
-              betrieben werden.
-            </p>
-          </details>
+          {text.faqs.map(([question, answer]) => (
+            <details key={question}>
+              <summary>{question}</summary>
+              <p>{answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 
       <section className="contact-section" id="kontakt">
         <div className="contact-copy">
-          <p className="eyebrow eyebrow-light">Nächster Schritt</p>
+          <p className="eyebrow eyebrow-light">{text.contactEyebrow}</p>
           <h2>
-            Welche drei Prozesse dürfen bei Ihrem nächsten Release
-            <em> nicht ausfallen?</em>
+            {text.contactTitle}
+            <em>{text.contactEmphasis}</em>
           </h2>
         </div>
         <div className="contact-action">
-          <p>
-            In einem kurzen Erstgespräch klären wir, ob sich Ihre Anwendung für
-            einen Release-Safety-Pilot eignet.
-          </p>
+          <p>{text.contactCopy}</p>
           <a className="button button-light" href={contactHref}>
-            Gespräch anfragen <Arrow />
+            {text.contactCta} <Arrow />
           </a>
-          <small>Unverbindlich · 30 Minuten · Keine Verkaufspräsentation</small>
+          <small>{text.contactSmall}</small>
         </div>
       </section>
 
@@ -370,9 +579,13 @@ export default function Home() {
           </span>
           <span>Release Safety</span>
         </a>
-        <p>Managed E2E Testing für SaaS · Made in Germany</p>
+        <p>{text.footer}</p>
         <p>© {new Date().getFullYear()} Release Safety</p>
       </footer>
     </main>
   );
+}
+
+export default function Home() {
+  return <LandingPage language="de" />;
 }
