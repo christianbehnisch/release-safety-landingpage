@@ -6,10 +6,9 @@ Release-Sicherheit für kritische Kundenprozesse.
 
 ## Vor der Veröffentlichung anpassen
 
-1. In `app/page.tsx` die Platzhalter-Adresse `kontakt@example.com` ersetzen.
-2. Preis und Leistungsumfang des Piloten final bestätigen.
-3. Impressum und Datenschutzerklärung ergänzen.
-4. Optional den Namen „Release Safety“ durch die endgültige Marke ersetzen.
+1. Preis und Leistungsumfang des Piloten final bestätigen.
+2. Impressum und Datenschutzerklärung ergänzen.
+3. Optional den Namen „Release Safety“ durch die endgültige Marke ersetzen.
 
 ## Lokal starten
 

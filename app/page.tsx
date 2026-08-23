@@ -1,5 +1,5 @@
 const contactHref =
-  "mailto:kontakt@example.com?subject=Anfrage%20Release-Safety-Pilot";
+  "mailto:christian.behnisch@outlook.de?subject=Anfrage%20Release-Safety-Pilot";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
