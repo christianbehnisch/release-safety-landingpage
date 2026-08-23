@@ -271,7 +271,7 @@ export default function Home() {
               </div>
               <div>
                 <span>Investition</span>
-                <strong>2.000 € netto</strong>
+                <strong>2.000 €</strong>
               </div>
             </div>
             <a className="button button-light" href="#kontakt">
