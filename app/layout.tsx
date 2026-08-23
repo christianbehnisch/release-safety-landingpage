@@ -12,19 +12,19 @@ const siteUrl = owner
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Release Safety – Automatisierte E2E-Absicherung für B2B-SaaS",
+  title: "Release Safety – Automatisierte E2E-Absicherung für SaaS",
   description:
     "Kritische Kundenprozesse automatisiert bei jedem Release prüfen – mit Playwright, verständlicher Fehlerdiagnose und persönlicher Betreuung.",
   keywords: [
     "Release Sicherheit",
     "Playwright Testing",
     "E2E Testing",
-    "B2B SaaS",
+    "SaaS Testing",
     "Testautomatisierung",
   ],
   authors: [{ name: "Release Safety" }],
   openGraph: {
-    title: "Release-Sicherheit für B2B-SaaS",
+    title: "Release-Sicherheit für SaaS",
     description: "Kritische User Journeys. Automatisch geprüft.",
     type: "website",
     locale: "de_DE",
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
         url: "./og.png",
         width: 1200,
         height: 630,
-        alt: "Release-Sicherheit für B2B-SaaS",
+        alt: "Release-Sicherheit für SaaS",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Release-Sicherheit für B2B-SaaS",
+    title: "Release-Sicherheit für SaaS",
     description: "Kritische User Journeys. Automatisch geprüft.",
     images: ["./og.png"],
   },

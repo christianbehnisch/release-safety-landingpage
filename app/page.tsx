@@ -36,7 +36,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">
             <span className="live-dot" aria-hidden="true" /> Managed E2E Testing
-            für B2B-SaaS
+            für SaaS
           </p>
           <h1>
             Ihre wichtigsten Kundenprozesse. <em>Bei jedem Release geprüft.</em>
@@ -288,7 +288,7 @@ export default function Home() {
         </div>
         <div className="fit-checklist">
           {[
-            "Sie betreiben eine laufende B2B-Webanwendung.",
+            "Sie betreiben eine laufende SaaS-Webanwendung.",
             "Ihr Team releast mindestens mehrmals im Monat.",
             "Regressionstests werden teilweise manuell ausgeführt.",
             "Eine große eigene QA-Abteilung gibt es noch nicht.",
@@ -370,7 +370,7 @@ export default function Home() {
           </span>
           <span>Release Safety</span>
         </a>
-        <p>Managed E2E Testing für B2B-SaaS · Made in Germany</p>
+        <p>Managed E2E Testing für SaaS · Made in Germany</p>
         <p>© {new Date().getFullYear()} Release Safety</p>
       </footer>
     </main>

@@ -1,7 +1,7 @@
 # Release Safety Landingpage
 
 Statische, responsive Landingpage für einen Managed-E2E-Testing-Service für
-B2B-SaaS. Die Seite nutzt Playwright als Technologie, verkauft aber das Ergebnis:
+SaaS-Anwendungen. Die Seite nutzt Playwright als Technologie, verkauft aber das Ergebnis:
 Release-Sicherheit für kritische Kundenprozesse.
 
 ## Vor der Veröffentlichung anpassen
