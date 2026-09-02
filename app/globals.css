@@ -922,6 +922,23 @@ footer p {
   text-transform: uppercase;
 }
 
+.footer-legal {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-legal a {
+  color: var(--muted);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-legal a:hover {
+  color: var(--coral-dark);
+}
+
 .brand-footer {
   font-size: 12px;
 }
@@ -931,8 +948,88 @@ footer p {
   width: 30px;
 }
 
+.legal-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-back {
+  padding-top: 8px;
+}
+
+.legal-shell {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 90px 28px 120px;
+}
+
+.legal-title {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 64px;
+  padding-bottom: 55px;
+}
+
+.legal-title h1 {
+  font-size: clamp(3.4rem, 7vw, 6rem);
+  hyphens: manual;
+  margin-bottom: 18px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.legal-title > p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.legal-content {
+  display: grid;
+  gap: 0;
+}
+
+.legal-content section {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(210px, 0.6fr) 1.4fr;
+  padding: 42px 0;
+}
+
+.legal-content section:first-child {
+  padding-top: 0;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+.legal-content p,
+.legal-content address {
+  color: #5d5350;
+  font-size: 15px;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+.legal-section-body > :last-child {
+  margin-bottom: 0;
+}
+
+.legal-content a {
+  color: var(--coral-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.legal-page-footer {
+  border-top: 1px solid var(--line);
+}
+
 @media (max-width: 1050px) {
-  nav {
+  .site-header > nav {
     display: none;
   }
 
@@ -1057,6 +1154,11 @@ footer p {
   .contact-section {
     padding: 80px 34px;
   }
+
+  .legal-content section {
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1147,6 +1249,23 @@ footer p {
     flex-direction: column;
     gap: 15px;
     padding: 30px 20px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+  }
+
+  .legal-shell {
+    padding: 65px 20px 90px;
+  }
+
+  .legal-title {
+    margin-bottom: 42px;
+    padding-bottom: 38px;
+  }
+
+  .legal-title h1 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
   }
 }
 

@@ -7,8 +7,7 @@ unter `/`, die englische Version unter `/en.html`.
 
 ## Vor der Veröffentlichung anpassen
 
-1. Impressum und Datenschutzerklärung ergänzen.
-2. Optional den Namen „Release Safety“ durch die endgültige Marke ersetzen.
+Optional den Namen „Release Safety“ durch die endgültige Marke ersetzen.
 
 ## Lokal starten
 

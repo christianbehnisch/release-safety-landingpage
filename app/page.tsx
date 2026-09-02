@@ -146,6 +146,9 @@ const copy = {
     contactSmall: "Unverbindlich · 30 Minuten · Keine Verkaufspräsentation",
     contactSubject: "Anfrage Release-Safety-Pilot",
     footer: "Managed E2E Testing für SaaS · Made in Germany",
+    footerAria: "Rechtliche Informationen",
+    imprint: "Impressum",
+    privacy: "Datenschutz",
   },
   en: {
     brandAria: "Release Safety – Home",
@@ -294,6 +297,9 @@ const copy = {
     contactSmall: "No obligation · 30 minutes · No sales presentation",
     contactSubject: "Release Safety Pilot inquiry",
     footer: "Managed E2E Testing for SaaS · Made in Germany",
+    footerAria: "Legal information",
+    imprint: "Legal notice",
+    privacy: "Privacy",
   },
 } as const;
 
@@ -580,6 +586,14 @@ export function LandingPage({ language }: { language: Language }) {
           <span>Release Safety</span>
         </a>
         <p>{text.footer}</p>
+        <nav className="footer-legal" aria-label={text.footerAria}>
+          <a href={isEnglish ? "./imprint.html" : "./impressum.html"}>
+            {text.imprint}
+          </a>
+          <a href={isEnglish ? "./privacy.html" : "./datenschutz.html"}>
+            {text.privacy}
+          </a>
+        </nav>
         <p>© {new Date().getFullYear()} Release Safety</p>
       </footer>
     </main>
