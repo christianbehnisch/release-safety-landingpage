@@ -1029,7 +1029,7 @@ footer p {
 }
 
 @media (max-width: 1050px) {
-  .site-header > nav {
+  nav {
     display: none;
   }
 

@@ -21,10 +21,7 @@ export default function ImprintPage() {
         {
           heading: "Diensteanbieter",
           content: (
-            <>
-              <Address />
-              <p>Einzelunternehmer</p>
-            </>
+            <Address />
           ),
         },
         {

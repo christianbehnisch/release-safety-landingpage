@@ -7,7 +7,7 @@ type LegalPageProps = {
   backLabel: string;
   eyebrow: string;
   footerLabel: string;
-  language: "de" | "en";
+  language: "de";
   sections: LegalSection[];
   title: string;
   updatedLabel: string;
@@ -18,7 +18,6 @@ export const owner = {
   street: "Zeisigweg 13",
   city: "91056 Erlangen",
   countryDe: "Deutschland",
-  countryEn: "Germany",
   email: "christian.behnisch@outlook.de",
 } as const;
 
@@ -78,7 +77,7 @@ export function LegalPage({
   );
 }
 
-export function Address({ english = false }: { english?: boolean }) {
+export function Address() {
   return (
     <address>
       {owner.name}
@@ -87,7 +86,7 @@ export function Address({ english = false }: { english?: boolean }) {
       <br />
       {owner.city}
       <br />
-      {english ? owner.countryEn : owner.countryDe}
+      {owner.countryDe}
     </address>
   );
 }
