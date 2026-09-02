@@ -10,18 +10,18 @@ const copy = {
       ["#faq", "FAQ"],
     ],
     headerCta: "Pilot besprechen",
-    eyebrow: "Managed E2E Testing für SaaS",
+    eyebrow: "Managed E2E Testing für Web, iOS & Android",
     heroTitle: "Ihre wichtigsten Kundenprozesse.",
     heroEmphasis: "Bei jedem Release geprüft.",
     heroLead:
-      "Ich automatisiere die kritischen User Journeys Ihrer SaaS-Anwendung und integriere sie in Ihren Release-Prozess – auf Wunsch ohne Zugriff auf Ihren Anwendungscode.",
+      "Ich automatisiere die kritischen User Journeys Ihrer Web- und Mobile-Anwendungen und integriere sie in Ihren Release-Prozess – als Black-Box-Tests, auf Wunsch ohne Zugriff auf Ihren Anwendungscode.",
     heroCta: "Pilotprojekt anfragen",
     heroLink: "So funktioniert es",
     trustAria: "Vorteile",
     trust: [
-      "In 2–4 Wochen startklar",
-      "Playwright-basiert",
-      "Tests bleiben übertragbar",
+      "Web, iOS & Android",
+      "Playwright & Appium",
+      "Tests gehören Ihnen",
     ],
     portraitAria: "Persönlicher Ansprechpartner",
     portraitAlt:
@@ -34,9 +34,9 @@ const copy = {
     photoCaptionSmall: "von Setup bis Fehleranalyse",
     valueAria: "Leistungsmerkmale",
     values: [
-      ["Black-Box möglich", "Keine Freigabe des Sourcecodes nötig"],
-      ["Direkt im Prozess", "Ausführung bei jedem relevanten Release"],
-      ["Fehler mit Kontext", "Screenshots, Videos und Traces statt Rätselraten"],
+      ["Black-Box möglich", "Keine Freigabe des Sourcecodes erforderlich"],
+      ["Web und Mobile", "Browser, iOS und Android durchgängig geprüft"],
+      ["Offen & übertragbar", "Sie erhalten alle Tests dokumentiert"],
     ],
     problemKicker: "Das Problem",
     problemTitle: "Manuelle Regression kostet Zeit. Produktionsfehler kosten",
@@ -62,10 +62,37 @@ const copy = {
         "Ein roter Build zeigt den Fehler, aber nicht die verständliche Ursache.",
       ],
     ],
+    platformKicker: "Eine Absicherung. Alle relevanten Oberflächen.",
+    platformTitle: "Web, iOS und Android. Durchgängig getestet.",
+    platformIntro:
+      "Kritische Geschäftsprozesse werden dort geprüft, wo Ihre Kunden sie tatsächlich verwenden.",
+    platformAria: "Unterstützte Plattformen",
+    platforms: [
+      [
+        "01",
+        "Web-Anwendungen",
+        "Playwright",
+        "Browserbasierte E2E-Tests für Ihre wichtigsten Kundenprozesse.",
+      ],
+      [
+        "02",
+        "iOS-Apps",
+        "Appium",
+        "Automatisierte App-Tests auf Simulatoren oder geeigneten Geräten.",
+      ],
+      [
+        "03",
+        "Android-Apps",
+        "Appium",
+        "Automatisierte App-Tests auf Emulatoren oder geeigneten Geräten.",
+      ],
+    ],
+    platformNote:
+      "Die Tests laufen gegen eine geeignete Testumgebung oder installierbare Testversion. Zugriff auf den Anwendungscode ist nicht zwingend erforderlich. Stabile Test-IDs können die Robustheit zusätzlich verbessern.",
     journeyKicker: "So wird Sicherheit konkret",
     journeyTitle: "Ein echter Geschäftsprozess. Durchgängig abgesichert.",
     journeyIntro:
-      "Beispiel Rechnungs-SaaS: Jeder Schritt wird ausgeführt und fachlich geprüft – nicht nur angeklickt.",
+      "Beispiel Rechnungs-SaaS – als Webanwendung oder Mobile-App: Jeder Schritt wird ausgeführt und fachlich geprüft – nicht nur angeklickt.",
     journeyAria: "Beispiel User Journey",
     journeys: [
       ["01", "Login", "Testnutzer authentifiziert"],
@@ -78,7 +105,7 @@ const copy = {
       [
         "01 · Automatisierung",
         "Stabile Tests statt Klick-Skripte",
-        "Robuste Selektoren, reproduzierbare Testdaten und fachliche Assertions für die wirklich relevanten Ergebnisse.",
+        "Robuste Selektoren, reproduzierbare Testdaten und fachliche Assertions mit Playwright oder Appium.",
       ],
       [
         "02 · Integration",
@@ -88,30 +115,30 @@ const copy = {
       [
         "03 · Diagnose",
         "Verstehen, was schiefging",
-        "Bei Fehlern liefern Trace, Screenshot und Video sofort den nötigen Kontext für eine schnelle Entscheidung.",
+        "Bei Fehlern liefern Trace, Screenshot, Video und Logs sofort den nötigen Kontext für eine schnelle Entscheidung.",
       ],
     ],
     pilotEyebrow: "Der kontrollierte Einstieg",
     pilotTitle: "Release-Safety-Pilot",
     pilotIntro:
-      "Kein Großprojekt. Wir starten mit den drei Prozessen, deren Ausfall Ihre Kunden und Ihr Team am stärksten treffen würde.",
+      "Kein Großprojekt. Wir starten auf einer Zielplattform mit den drei Prozessen, deren Ausfall Ihre Kunden und Ihr Team am stärksten treffen würde.",
     pilotItems: [
       "Auswahl der drei kritischsten User Journeys",
-      "Automatisierung mit Playwright",
-      "Ausführung gegen Ihre Testumgebung",
-      "Screenshots und Trace bei Fehlern",
-      "Dokumentation und Abschlussgespräch",
+      "Automatisierung mit Playwright oder Appium",
+      "Ausführung auf Web, iOS oder Android",
+      "Screenshots, Videos, Traces oder Appium-Logs bei Fehlern",
+      "Vollständige Tests, Dokumentation und Abschlussgespräch",
     ],
     pilotFacts: [
-      ["Umfang", "3 Journeys"],
+      ["Umfang", "3 Journeys · 1 Plattform"],
       ["Zeitrahmen", "2–4 Wochen"],
-      ["Investition", "2.000 €"],
+      ["Investition", "ab 2.000 €"],
     ],
     pilotCta: "Pilot unverbindlich besprechen",
     fitKicker: "Guter Fit?",
-    fitTitle: "Für SaaS-Teams, die schnell releasen – aber nicht blind.",
+    fitTitle: "Für Produktteams, die schnell releasen – aber nicht blind.",
     fitItems: [
-      "Sie betreiben eine laufende SaaS-Webanwendung.",
+      "Sie betreiben eine laufende Web-, iOS- oder Android-Anwendung.",
       "Ihr Team releast mindestens mehrmals im Monat.",
       "Regressionstests werden teilweise manuell ausgeführt.",
       "Eine große eigene QA-Abteilung gibt es noch nicht.",
@@ -122,7 +149,11 @@ const copy = {
     faqs: [
       [
         "Brauchen Sie Zugriff auf unseren Sourcecode?",
-        "Nicht zwingend. Für Black-Box-Tests reichen häufig eine geeignete Testumgebung, stabile Testkonten und ein definierter Weg für Testdaten. Für die CI/CD-Anbindung kann eine kleine Konfiguration durch Ihr Team nötig sein.",
+        "Nicht zwingend. Für Black-Box-Tests reichen häufig eine geeignete Testumgebung oder installierbare Testversion, stabile Testkonten und ein definierter Weg für Testdaten. Für die CI/CD-Anbindung kann eine kleine Konfiguration durch Ihr Team nötig sein.",
+      ],
+      [
+        "Welche Mobile-Apps können Sie testen?",
+        "iOS- und Android-Apps können mit Appium automatisiert werden. Das gilt für native und – nach einem technischen Check – auch für viele Cross-Platform- oder hybride Apps. Getestet wird auf Simulatoren, Emulatoren oder geeigneten Geräten.",
       ],
       [
         "Was passiert, wenn sich die Oberfläche ändert?",
@@ -134,7 +165,7 @@ const copy = {
       ],
       [
         "Gehören uns die erstellten Tests?",
-        "Ja. Die Tests basieren auf Standard-Playwright und können dokumentiert übergeben oder in Ihrer eigenen Infrastruktur betrieben werden.",
+        "Ja. Sie erhalten die vollständigen Playwright- oder Appium-Tests inklusive Dokumentation. Die Tests können übergeben, angepasst und in Ihrer eigenen Infrastruktur ausgeführt werden.",
       ],
     ],
     contactEyebrow: "Nächster Schritt",
@@ -145,7 +176,7 @@ const copy = {
     contactCta: "Gespräch anfragen",
     contactSmall: "Unverbindlich · 30 Minuten · Keine Verkaufspräsentation",
     contactSubject: "Anfrage Release-Safety-Pilot",
-    footer: "Managed E2E Testing für SaaS · Made in Germany",
+    footer: "Managed E2E Testing für Web & Mobile · Made in Germany",
   },
   en: {
     brandAria: "Release Safety – Home",
@@ -158,18 +189,18 @@ const copy = {
       ["#faq", "FAQ"],
     ],
     headerCta: "Discuss a pilot",
-    eyebrow: "Managed E2E Testing for SaaS",
+    eyebrow: "Managed E2E Testing for Web, iOS & Android",
     heroTitle: "Your most important customer journeys.",
     heroEmphasis: "Tested with every release.",
     heroLead:
-      "I automate the critical user journeys in your SaaS application and integrate them into your release process – without access to your application source code if preferred.",
+      "I automate the critical user journeys in your web and mobile applications and integrate them into your release process as black-box tests – without access to your application source code if preferred.",
     heroCta: "Request a pilot project",
     heroLink: "How it works",
     trustAria: "Benefits",
     trust: [
-      "Ready in 2–4 weeks",
-      "Built with Playwright",
-      "Tests remain portable",
+      "Web, iOS & Android",
+      "Playwright & Appium",
+      "You own the tests",
     ],
     portraitAria: "Your personal point of contact",
     portraitAlt:
@@ -183,8 +214,8 @@ const copy = {
     valueAria: "Service benefits",
     values: [
       ["Black-box capable", "No source code access required"],
-      ["Built into your process", "Runs with every relevant release"],
-      ["Errors with context", "Screenshots, videos and traces instead of guesswork"],
+      ["Web and mobile", "Browsers, iOS and Android tested end to end"],
+      ["Open and portable", "You receive every test with documentation"],
     ],
     problemKicker: "The problem",
     problemTitle: "Manual regression costs time. Production bugs cost",
@@ -210,10 +241,37 @@ const copy = {
         "A red build signals a problem but not a clear, actionable cause.",
       ],
     ],
+    platformKicker: "One safety net. Every relevant interface.",
+    platformTitle: "Web, iOS and Android. Tested end to end.",
+    platformIntro:
+      "Critical business processes are tested where your customers actually use them.",
+    platformAria: "Supported platforms",
+    platforms: [
+      [
+        "01",
+        "Web applications",
+        "Playwright",
+        "Browser-based E2E tests for your most important customer journeys.",
+      ],
+      [
+        "02",
+        "iOS apps",
+        "Appium",
+        "Automated app tests on simulators or suitable devices.",
+      ],
+      [
+        "03",
+        "Android apps",
+        "Appium",
+        "Automated app tests on emulators or suitable devices.",
+      ],
+    ],
+    platformNote:
+      "Tests run against a suitable test environment or installable test build. Access to the application source code is not essential. Stable test IDs can further improve reliability.",
     journeyKicker: "Confidence made concrete",
     journeyTitle: "One real business process. Protected end to end.",
     journeyIntro:
-      "Example from invoicing SaaS: every step is executed and its business outcome verified – not merely clicked.",
+      "Example from invoicing SaaS – as a web application or mobile app: every step is executed and its business outcome verified, not merely clicked.",
     journeyAria: "Example user journey",
     journeys: [
       ["01", "Log in", "Test user authenticated"],
@@ -226,7 +284,7 @@ const copy = {
       [
         "01 · Automation",
         "Reliable tests, not click scripts",
-        "Robust selectors, reproducible test data and business-level assertions for the outcomes that truly matter.",
+        "Robust selectors, reproducible test data and business-level assertions with Playwright or Appium.",
       ],
       [
         "02 · Integration",
@@ -236,30 +294,30 @@ const copy = {
       [
         "03 · Diagnosis",
         "Understand what went wrong",
-        "When a test fails, traces, screenshots and video provide the context needed for a quick decision.",
+        "When a test fails, traces, screenshots, video and logs provide the context needed for a quick decision.",
       ],
     ],
     pilotEyebrow: "A controlled first step",
     pilotTitle: "Release Safety Pilot",
     pilotIntro:
-      "No major project. We start with the three processes whose failure would affect your customers and team the most.",
+      "No major project. We start on one target platform with the three processes whose failure would affect your customers and team the most.",
     pilotItems: [
       "Selection of the three most critical user journeys",
-      "Automation with Playwright",
-      "Execution against your test environment",
-      "Screenshots and traces when tests fail",
-      "Documentation and final review",
+      "Automation with Playwright or Appium",
+      "Execution on web, iOS or Android",
+      "Screenshots, videos, traces or Appium logs when tests fail",
+      "Complete tests, documentation and final review",
     ],
     pilotFacts: [
-      ["Scope", "3 journeys"],
+      ["Scope", "3 journeys · 1 platform"],
       ["Timeline", "2–4 weeks"],
-      ["Investment", "€2,000"],
+      ["Investment", "from €2,000"],
     ],
     pilotCta: "Discuss a pilot without obligation",
     fitKicker: "A good fit?",
-    fitTitle: "For SaaS teams that release quickly – without flying blind.",
+    fitTitle: "For product teams that release quickly – without flying blind.",
     fitItems: [
-      "You operate a live SaaS web application.",
+      "You operate a live web, iOS or Android application.",
       "Your team releases at least several times a month.",
       "Regression tests are still performed partly by hand.",
       "You do not yet have a large in-house QA team.",
@@ -270,7 +328,11 @@ const copy = {
     faqs: [
       [
         "Do you need access to our source code?",
-        "Not necessarily. For black-box tests, a suitable test environment, stable test accounts and a defined way to create test data are often enough. Your team may need to add a small configuration for CI/CD integration.",
+        "Not necessarily. For black-box tests, a suitable test environment or installable test build, stable test accounts and a defined way to create test data are often enough. Your team may need to add a small configuration for CI/CD integration.",
+      ],
+      [
+        "Which mobile apps can you test?",
+        "iOS and Android apps can be automated with Appium. This includes native apps and, following a technical review, many cross-platform or hybrid apps. Tests run on simulators, emulators or suitable devices.",
       ],
       [
         "What happens when the interface changes?",
@@ -282,7 +344,7 @@ const copy = {
       ],
       [
         "Do we own the tests that are created?",
-        "Yes. The tests use standard Playwright and can be documented and handed over or run in your own infrastructure.",
+        "Yes. You receive the complete Playwright or Appium tests with documentation. They can be handed over, modified and run in your own infrastructure.",
       ],
     ],
     contactEyebrow: "Next step",
@@ -293,7 +355,7 @@ const copy = {
     contactCta: "Request a conversation",
     contactSmall: "No obligation · 30 minutes · No sales presentation",
     contactSubject: "Release Safety Pilot inquiry",
-    footer: "Managed E2E Testing for SaaS · Made in Germany",
+    footer: "Managed E2E Testing for Web & Mobile · Made in Germany",
   },
 } as const;
 
@@ -457,6 +519,33 @@ export function LandingPage({ language }: { language: Language }) {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="section platform-section">
+        <div className="platform-heading">
+          <div>
+            <div className="section-kicker">{text.platformKicker}</div>
+            <h2>{text.platformTitle}</h2>
+          </div>
+          <p>{text.platformIntro}</p>
+        </div>
+
+        <div className="platform-cards" role="list" aria-label={text.platformAria}>
+          {text.platforms.map(([number, title, technology, description]) => (
+            <article role="listitem" key={number}>
+              <div className="platform-card-top">
+                <span className="platform-number">{number}</span>
+                <span className="platform-technology">{technology}</span>
+              </div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </article>
+          ))}
+        </div>
+
+        <p className="platform-note">
+          <Check /> <span>{text.platformNote}</span>
+        </p>
       </section>
 
       <section className="section journey-section" id="ablauf">

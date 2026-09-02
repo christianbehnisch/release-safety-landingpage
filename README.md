@@ -1,8 +1,8 @@
 # Release Safety Landingpage
 
 Statische, responsive Landingpage für einen Managed-E2E-Testing-Service für
-SaaS-Anwendungen. Die Seite nutzt Playwright als Technologie, verkauft aber das Ergebnis:
-Release-Sicherheit für kritische Kundenprozesse. Die deutsche Startseite liegt
+Web-, iOS- und Android-Anwendungen. Die Seite nutzt Playwright und Appium als
+Technologien, verkauft aber das Ergebnis: Release-Sicherheit für kritische Kundenprozesse. Die deutsche Startseite liegt
 unter `/`, die englische Version unter `/en.html`.
 
 ## Vor der Veröffentlichung anpassen

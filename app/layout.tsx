@@ -13,15 +13,17 @@ const englishUrl = new URL("en.html", siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Release Safety – Automatisierte E2E-Absicherung für SaaS",
+  title: "Release Safety – E2E-Absicherung für Web & Mobile",
   description:
-    "Kritische Kundenprozesse automatisiert bei jedem Release prüfen – mit Playwright, verständlicher Fehlerdiagnose und persönlicher Betreuung.",
+    "Kritische Kundenprozesse in Web-, iOS- und Android-Anwendungen automatisiert prüfen – mit Playwright, Appium und verständlicher Fehlerdiagnose.",
   keywords: [
     "Release Sicherheit",
     "Playwright Testing",
     "E2E Testing",
     "SaaS Testing",
     "Testautomatisierung",
+    "Appium Testing",
+    "Mobile App Testing",
   ],
   authors: [{ name: "Release Safety" }],
   alternates: {
@@ -32,8 +34,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Release-Sicherheit für SaaS",
-    description: "Kritische User Journeys. Automatisch geprüft.",
+    title: "Release-Sicherheit für Web & Mobile",
+    description: "Kritische User Journeys in Web und Mobile. Automatisch geprüft.",
     type: "website",
     locale: "de_DE",
     url: siteUrl,
@@ -48,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Release-Sicherheit für SaaS",
-    description: "Kritische User Journeys. Automatisch geprüft.",
+    title: "Release-Sicherheit für Web & Mobile",
+    description: "Kritische User Journeys in Web und Mobile. Automatisch geprüft.",
     images: ["./og.png"],
   },
   icons: {

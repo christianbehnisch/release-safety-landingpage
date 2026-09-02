@@ -10,7 +10,13 @@ test("static export contains the landing page and essential metadata", async () 
 
   assert.match(html, /Ihre wichtigsten Kundenprozesse/);
   assert.match(html, /Release-Safety-Pilot/);
-  assert.match(html, /Automatisierte E2E-Absicherung/);
+  assert.match(html, /Managed E2E Testing für Web, iOS &amp; Android/);
+  assert.match(html, /Web-Anwendungen/);
+  assert.match(html, /iOS-Apps/);
+  assert.match(html, /Android-Apps/);
+  assert.match(html, /Playwright oder Appium/);
+  assert.match(html, /3 Journeys · 1 Plattform/);
+  assert.match(html, /E2E-Absicherung für Web &amp; Mobile/);
   assert.match(html, /portrait\.jpg/);
   assert.match(html, /og\.png/);
   assert.match(html, /href="\.\/en\.html"/);
@@ -19,7 +25,12 @@ test("static export contains the landing page and essential metadata", async () 
 
   assert.match(englishHtml, /Your most important customer journeys/);
   assert.match(englishHtml, /Release Safety Pilot/);
-  assert.match(englishHtml, /Automated E2E Testing for SaaS/);
+  assert.match(englishHtml, /Managed E2E Testing for Web, iOS &amp; Android/);
+  assert.match(englishHtml, /Web applications/);
+  assert.match(englishHtml, /iOS apps/);
+  assert.match(englishHtml, /Android apps/);
+  assert.match(englishHtml, /Playwright or Appium/);
+  assert.match(englishHtml, /E2E Testing for Web &amp; Mobile/);
   assert.match(englishHtml, /lang="en"/);
   assert.match(englishHtml, /href="\.\/"/);
   assert.match(englishHtml, /src="\.\/portrait\.jpg"/);

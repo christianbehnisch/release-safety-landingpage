@@ -14,9 +14,9 @@ const siteUrl = owner
 const englishUrl = new URL("en.html", siteUrl).toString();
 
 export const metadata: Metadata = {
-  title: "Release Safety – Automated E2E Testing for SaaS",
+  title: "Release Safety – E2E Testing for Web & Mobile",
   description:
-    "Test critical customer journeys with every release – using Playwright, clear failure diagnostics and personal support.",
+    "Test critical customer journeys across web, iOS and Android – using Playwright, Appium and clear failure diagnostics.",
   alternates: {
     canonical: englishUrl,
     languages: {
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Release Safety for SaaS",
-    description: "Critical user journeys. Automatically tested.",
+    title: "Release Safety for Web & Mobile",
+    description: "Critical user journeys across web and mobile. Automatically tested.",
     locale: "en_US",
     url: englishUrl,
   },
   twitter: {
-    title: "Release Safety for SaaS",
-    description: "Critical user journeys. Automatically tested.",
+    title: "Release Safety for Web & Mobile",
+    description: "Critical user journeys across web and mobile. Automatically tested.",
   },
 };
 

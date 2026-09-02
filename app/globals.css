@@ -574,6 +574,101 @@ h2 em {
   margin-bottom: 0;
 }
 
+.platform-section {
+  border-top: 1px solid var(--line);
+  padding-top: 105px;
+}
+
+.platform-heading {
+  align-items: end;
+  display: grid;
+  gap: 90px;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.platform-heading h2 {
+  margin-bottom: 0;
+}
+
+.platform-heading > p {
+  color: var(--muted);
+  font-size: 17px;
+  margin-bottom: 8px;
+  max-width: 500px;
+}
+
+.platform-cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 70px;
+}
+
+.platform-cards article {
+  background: rgba(255, 250, 246, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 32px;
+}
+
+.platform-card-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.platform-number {
+  color: var(--coral-dark);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 10px;
+}
+
+.platform-technology {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--wine);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.platform-cards h3 {
+  font-size: 23px;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+
+.platform-cards p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.platform-note {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  font-size: 13px;
+  gap: 12px;
+  line-height: 1.65;
+  margin: 38px 0 0;
+  padding: 23px 0;
+}
+
+.platform-note .check {
+  margin-top: 1px;
+}
+
 .journey-section {
   max-width: none;
   padding-left: max(28px, calc((100vw - 1184px) / 2));
@@ -1109,6 +1204,7 @@ footer p {
 
   .problem-grid,
   .journey-heading,
+  .platform-heading,
   .pilot-card,
   .fit-section,
   .faq-section,
@@ -1118,6 +1214,7 @@ footer p {
 
   .problem-grid,
   .journey-heading,
+  .platform-heading,
   .fit-section,
   .faq-section,
   .contact-section {
@@ -1125,12 +1222,21 @@ footer p {
   }
 
   .pain-cards,
+  .platform-cards,
   .deliverables {
     grid-template-columns: 1fr;
   }
 
   .pain-cards article {
     min-height: auto;
+  }
+
+  .platform-cards article {
+    min-height: auto;
+  }
+
+  .platform-card-top {
+    margin-bottom: 38px;
   }
 
   .card-icon {
@@ -1222,8 +1328,7 @@ footer p {
   }
 
   h2 {
-    font-size: clamp(2.6rem, 13vw, 3.5rem);
-    overflow-wrap: anywhere;
+    font-size: clamp(2.35rem, calc(14.5vw - 9px), 3.5rem);
   }
 
   .pain-cards {
@@ -1270,12 +1375,6 @@ footer p {
 
   .legal-title h1 {
     font-size: clamp(2.8rem, 14vw, 4rem);
-  }
-}
-
-@media (max-width: 340px) {
-  h2 {
-    font-size: 2.35rem;
   }
 }
 
