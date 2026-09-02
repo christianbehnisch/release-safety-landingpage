@@ -1070,12 +1070,14 @@ footer p {
 
   .hero-copy {
     max-width: 740px;
+    min-width: 0;
   }
 
   .hero-visual {
     min-height: 660px;
     margin: 50px auto 0;
     max-width: 580px;
+    min-width: 0;
     width: 100%;
   }
 
@@ -1178,7 +1180,8 @@ footer p {
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.35rem);
+    font-size: clamp(2.35rem, calc(14.5vw - 7px), 4.35rem);
+    overflow-wrap: anywhere;
   }
 
   .hero-lead {
@@ -1220,6 +1223,7 @@ footer p {
 
   h2 {
     font-size: clamp(2.6rem, 13vw, 3.5rem);
+    overflow-wrap: anywhere;
   }
 
   .pain-cards {
@@ -1266,6 +1270,12 @@ footer p {
 
   .legal-title h1 {
     font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 2.35rem;
   }
 }
 
