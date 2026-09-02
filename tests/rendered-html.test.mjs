@@ -30,7 +30,7 @@ test("static export contains the landing page and essential metadata", async () 
 
   assert.match(imprintHtml, /Christian Behnisch/);
   assert.match(imprintHtml, /Zeisigweg 13/);
-  assert.match(imprintHtml, /§ 19 UStG/);
+  assert.doesNotMatch(imprintHtml, /Kleinunternehmer|§ 19 UStG/);
   assert.match(privacyHtml, /Hosting über GitHub Pages/);
   assert.match(privacyHtml, /Bayerische Landesamt für Datenschutzaufsicht/);
   assert.match(englishImprintHtml, /Sole proprietor/);

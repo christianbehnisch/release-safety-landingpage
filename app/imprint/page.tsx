@@ -35,15 +35,6 @@ export default function ImprintPage() {
             </p>
           ),
         },
-        {
-          heading: "VAT",
-          content: (
-            <p>
-              No VAT is charged under the German small-business regulation in
-              section 19 UStG.
-            </p>
-          ),
-        },
       ]}
     />
   );

@@ -35,15 +35,6 @@ export default function ImprintPage() {
             </p>
           ),
         },
-        {
-          heading: "Umsatzsteuer",
-          content: (
-            <p>
-              Gemäß § 19 UStG wird aufgrund der Kleinunternehmerregelung keine
-              Umsatzsteuer ausgewiesen.
-            </p>
-          ),
-        },
       ]}
     />
   );
