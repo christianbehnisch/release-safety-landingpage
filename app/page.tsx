@@ -45,6 +45,7 @@ const copy = {
       "Eine echte Demo-Webanwendung zeigt, wie drei kritische Geschäftsprozesse mit Playwright geprüft werden. Quellcode, Workflow und letzte Testläufe sind öffentlich einsehbar.",
     demoStatus: "GitHub Actions · Live",
     demoAppLabel: "Demo-Webseite öffnen",
+    demoReportLabel: "Beispielreport ansehen",
     demoWorkflowLabel: "Testläufe ansehen",
     demoCodeLabel: "Quellcode ansehen",
     demoAria: "Automatisierte Demo-Journeys",
@@ -54,7 +55,7 @@ const copy = {
       ["03", "Rechnung versenden", "Status im System bestätigt"],
     ],
     demoNote:
-      "Black-Box gegen die veröffentlichte URL · Synthetische Testdaten · Report und Fehlerbelege als Workflow-Artefakte",
+      "Black-Box gegen die veröffentlichte URL · Synthetische Testdaten · Öffentlicher Playwright-Report und Fehlerbelege als Workflow-Artefakte",
     problemKicker: "Das Problem",
     problemTitle: "Manuelle Regression kostet Zeit. Produktionsfehler kosten",
     problemEmphasis: " Vertrauen.",
@@ -241,6 +242,7 @@ const copy = {
       "A real demo application shows how Playwright protects three critical business journeys. Source code, workflow and recent test runs are publicly available.",
     demoStatus: "GitHub Actions · Live",
     demoAppLabel: "Open demo website",
+    demoReportLabel: "View sample report",
     demoWorkflowLabel: "View test runs",
     demoCodeLabel: "View source code",
     demoAria: "Automated demo journeys",
@@ -250,7 +252,7 @@ const copy = {
       ["03", "Send invoice", "System status confirmed"],
     ],
     demoNote:
-      "Black-box tests against the published URL · Synthetic test data · Report and failure evidence supplied as workflow artifacts",
+      "Black-box tests against the published URL · Synthetic test data · Public Playwright report and failure evidence supplied as workflow artifacts",
     problemKicker: "The problem",
     problemTitle: "Manual regression costs time. Production bugs cost",
     problemEmphasis: " trust.",
@@ -547,6 +549,14 @@ export function LandingPage({ language }: { language: Language }) {
                 rel="noreferrer"
               >
                 {text.demoAppLabel} <Arrow />
+              </a>
+              <a
+                className="text-link"
+                href="https://christianbehnisch.github.io/release-safety-demo/report/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {text.demoReportLabel} <Arrow />
               </a>
               <a
                 className="text-link"

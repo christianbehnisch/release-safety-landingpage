@@ -19,7 +19,9 @@ test("static export contains the landing page and essential metadata", async () 
   assert.match(html, /Nicht nur versprochen/);
   assert.match(html, /Release Safety E2E workflow status/);
   assert.match(html, /release-safety-demo\/actions\/workflows\/release-safety\.yml/);
+  assert.match(html, /release-safety-demo\/report\//);
   assert.match(html, /Demo-Webseite öffnen/);
+  assert.match(html, /Beispielreport ansehen/);
   assert.match(html, /E2E-Absicherung für Web &amp; Mobile/);
   assert.match(html, /portrait\.jpg/);
   assert.match(html, /og\.png/);
@@ -37,6 +39,7 @@ test("static export contains the landing page and essential metadata", async () 
   assert.match(englishHtml, /E2E Testing for Web &amp; Mobile/);
   assert.match(englishHtml, /More than a promise/);
   assert.match(englishHtml, /Open demo website/);
+  assert.match(englishHtml, /View sample report/);
   assert.match(englishHtml, /lang="en"/);
   assert.match(englishHtml, /href="\.\/"/);
   assert.match(englishHtml, /src="\.\/portrait\.jpg"/);
