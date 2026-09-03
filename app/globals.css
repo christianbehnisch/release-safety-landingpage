@@ -497,6 +497,147 @@ h1 em {
   margin-bottom: 28px;
 }
 
+.live-demo-section {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 105px;
+  padding-top: 105px;
+}
+
+.live-demo-heading {
+  align-items: end;
+  display: grid;
+  gap: 90px;
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+.live-demo-heading h2 {
+  margin-bottom: 0;
+}
+
+.live-demo-intro > p {
+  color: var(--muted);
+  font-size: 17px;
+  margin-bottom: 28px;
+  max-width: 570px;
+}
+
+.live-demo-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.live-demo-card {
+  background: var(--ink);
+  border-radius: 26px;
+  box-shadow: 0 28px 75px rgba(59, 32, 42, 0.14);
+  color: var(--white);
+  margin-top: 65px;
+  overflow: hidden;
+}
+
+.live-demo-card-top,
+.live-demo-card-bottom {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 28px;
+}
+
+.live-demo-card-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.demo-live-label {
+  align-items: center;
+  color: rgba(255, 250, 246, 0.62);
+  display: flex;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 9px;
+  font-weight: 700;
+  gap: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.live-demo-card-top img {
+  height: 20px;
+  width: auto;
+}
+
+.demo-journeys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.demo-journeys article {
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: auto 1fr auto;
+  min-width: 0;
+  padding: 31px 28px;
+}
+
+.demo-journeys article:last-child {
+  border-right: 0;
+}
+
+.demo-journey-number {
+  color: var(--coral);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 9px;
+}
+
+.demo-journeys strong,
+.demo-journeys small {
+  display: block;
+}
+
+.demo-journeys strong {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.demo-journeys small {
+  color: rgba(255, 250, 246, 0.48);
+  font-size: 10px;
+}
+
+.demo-check {
+  align-items: center;
+  background: var(--coral);
+  border-radius: 50%;
+  color: var(--ink);
+  display: flex;
+  font-size: 9px;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.live-demo-card-bottom {
+  background: rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  gap: 30px;
+}
+
+.live-demo-card-bottom p {
+  color: rgba(255, 250, 246, 0.45);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 9px;
+  margin: 0;
+}
+
+.live-demo-card-bottom a {
+  color: var(--coral);
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 800;
+}
+
 h2 {
   font-size: clamp(2.7rem, 5vw, 5rem);
   font-weight: 550;
@@ -1138,6 +1279,7 @@ footer p {
   }
 
   .problem-grid,
+  .live-demo-heading,
   .fit-section,
   .faq-section {
     gap: 60px;
@@ -1203,6 +1345,7 @@ footer p {
   }
 
   .problem-grid,
+  .live-demo-heading,
   .journey-heading,
   .platform-heading,
   .pilot-card,
@@ -1213,6 +1356,7 @@ footer p {
   }
 
   .problem-grid,
+  .live-demo-heading,
   .journey-heading,
   .platform-heading,
   .fit-section,
@@ -1222,6 +1366,7 @@ footer p {
   }
 
   .pain-cards,
+  .demo-journeys,
   .platform-cards,
   .deliverables {
     grid-template-columns: 1fr;
@@ -1229,6 +1374,15 @@ footer p {
 
   .pain-cards article {
     min-height: auto;
+  }
+
+  .demo-journeys article {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    border-right: 0;
+  }
+
+  .demo-journeys article:last-child {
+    border-bottom: 0;
   }
 
   .platform-cards article {
@@ -1302,6 +1456,32 @@ footer p {
 
   .hero-actions .text-link {
     justify-content: center;
+  }
+
+  .live-demo-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .live-demo-actions .text-link {
+    justify-content: center;
+  }
+
+  .live-demo-card {
+    border-radius: 20px;
+    margin-top: 45px;
+  }
+
+  .live-demo-card-top,
+  .live-demo-card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .demo-journeys article {
+    padding: 24px 20px;
   }
 
   .trust-list {

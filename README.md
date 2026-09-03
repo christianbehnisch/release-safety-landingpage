@@ -1,5 +1,8 @@
 # Release Safety Landingpage
 
+Die öffentliche Black-Box-Referenz mit GitHub Workflow und interaktiver
+Webanwendung liegt im [Release-Safety-Demo-Repository](https://github.com/christianbehnisch/release-safety-demo).
+
 Statische, responsive Landingpage für einen Managed-E2E-Testing-Service für
 Web-, iOS- und Android-Anwendungen. Die Seite nutzt Playwright und Appium als
 Technologien, verkauft aber das Ergebnis: Release-Sicherheit für kritische Kundenprozesse. Die deutsche Startseite liegt

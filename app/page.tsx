@@ -6,8 +6,8 @@ const copy = {
     nav: [
       ["#problem", "Warum E2E?"],
       ["#ablauf", "Ablauf"],
+      ["#demo", "Live-Demo"],
       ["#pilot", "Pilot"],
-      ["#faq", "FAQ"],
     ],
     headerCta: "Pilot besprechen",
     eyebrow: "Managed E2E Testing für Web, iOS & Android",
@@ -38,6 +38,23 @@ const copy = {
       ["Web und Mobile", "Browser, iOS und Android durchgängig geprüft"],
       ["Offen & übertragbar", "Sie erhalten alle Tests dokumentiert"],
     ],
+    demoKicker: "Öffentliche Referenz",
+    demoTitle: "Nicht nur versprochen.",
+    demoEmphasis: "Live nachprüfbar.",
+    demoIntro:
+      "Eine echte Demo-Webanwendung zeigt, wie drei kritische Geschäftsprozesse mit Playwright geprüft werden. Quellcode, Workflow und letzte Testläufe sind öffentlich einsehbar.",
+    demoStatus: "GitHub Actions · Live",
+    demoAppLabel: "Demo-Webseite öffnen",
+    demoWorkflowLabel: "Testläufe ansehen",
+    demoCodeLabel: "Quellcode ansehen",
+    demoAria: "Automatisierte Demo-Journeys",
+    demoJourneys: [
+      ["01", "Anmelden", "Demo-Nutzer authentifiziert"],
+      ["02", "Kunde anlegen", "Datensatz fachlich geprüft"],
+      ["03", "Rechnung versenden", "Status im System bestätigt"],
+    ],
+    demoNote:
+      "Black-Box gegen die veröffentlichte URL · Synthetische Testdaten · Report und Fehlerbelege als Workflow-Artefakte",
     problemKicker: "Das Problem",
     problemTitle: "Manuelle Regression kostet Zeit. Produktionsfehler kosten",
     problemEmphasis: " Vertrauen.",
@@ -185,8 +202,8 @@ const copy = {
     nav: [
       ["#problem", "Why E2E?"],
       ["#ablauf", "Process"],
+      ["#demo", "Live demo"],
       ["#pilot", "Pilot"],
-      ["#faq", "FAQ"],
     ],
     headerCta: "Discuss a pilot",
     eyebrow: "Managed E2E Testing for Web, iOS & Android",
@@ -217,6 +234,23 @@ const copy = {
       ["Web and mobile", "Browsers, iOS and Android tested end to end"],
       ["Open and portable", "You receive every test with documentation"],
     ],
+    demoKicker: "Public reference",
+    demoTitle: "More than a promise.",
+    demoEmphasis: "Live and verifiable.",
+    demoIntro:
+      "A real demo application shows how Playwright protects three critical business journeys. Source code, workflow and recent test runs are publicly available.",
+    demoStatus: "GitHub Actions · Live",
+    demoAppLabel: "Open demo website",
+    demoWorkflowLabel: "View test runs",
+    demoCodeLabel: "View source code",
+    demoAria: "Automated demo journeys",
+    demoJourneys: [
+      ["01", "Sign in", "Demo user authenticated"],
+      ["02", "Create customer", "Business record verified"],
+      ["03", "Send invoice", "System status confirmed"],
+    ],
+    demoNote:
+      "Black-box tests against the published URL · Synthetic test data · Report and failure evidence supplied as workflow artifacts",
     problemKicker: "The problem",
     problemTitle: "Manual regression costs time. Production bugs cost",
     problemEmphasis: " trust.",
@@ -493,6 +527,84 @@ export function LandingPage({ language }: { language: Language }) {
             </p>
           </div>
         ))}
+      </section>
+
+      <section className="section live-demo-section" id="demo">
+        <div className="live-demo-heading">
+          <div>
+            <div className="section-kicker">{text.demoKicker}</div>
+            <h2>
+              {text.demoTitle} <em>{text.demoEmphasis}</em>
+            </h2>
+          </div>
+          <div className="live-demo-intro">
+            <p>{text.demoIntro}</p>
+            <div className="live-demo-actions">
+              <a
+                className="button button-primary"
+                href="https://christianbehnisch.github.io/release-safety-demo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {text.demoAppLabel} <Arrow />
+              </a>
+              <a
+                className="text-link"
+                href="https://github.com/christianbehnisch/release-safety-demo/actions/workflows/release-safety.yml"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {text.demoWorkflowLabel} <Arrow />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="live-demo-card">
+          <div className="live-demo-card-top">
+            <span className="demo-live-label">
+              <span className="live-dot" aria-hidden="true" /> {text.demoStatus}
+            </span>
+            <a
+              href="https://github.com/christianbehnisch/release-safety-demo/actions/workflows/release-safety.yml"
+              target="_blank"
+              rel="noreferrer"
+              aria-label={text.demoWorkflowLabel}
+            >
+              {/* Dynamic status badges must stay remote so they reflect the latest run. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://github.com/christianbehnisch/release-safety-demo/actions/workflows/release-safety.yml/badge.svg"
+                alt="Release Safety E2E workflow status"
+                width="158"
+                height="20"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div className="demo-journeys" role="list" aria-label={text.demoAria}>
+            {text.demoJourneys.map(([number, title, result]) => (
+              <article role="listitem" key={number}>
+                <span className="demo-journey-number">{number}</span>
+                <div>
+                  <strong>{title}</strong>
+                  <small>{result}</small>
+                </div>
+                <span className="demo-check" aria-hidden="true">✓</span>
+              </article>
+            ))}
+          </div>
+          <div className="live-demo-card-bottom">
+            <p>{text.demoNote}</p>
+            <a
+              href="https://github.com/christianbehnisch/release-safety-demo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {text.demoCodeLabel} <Arrow />
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="section problem-section" id="problem">
