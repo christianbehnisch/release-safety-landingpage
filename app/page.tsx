@@ -150,7 +150,7 @@ const copy = {
     pilotFacts: [
       ["Umfang", "3 Journeys · 1 Plattform"],
       ["Zeitrahmen", "2–4 Wochen"],
-      ["Investition", "ab 2.000 €"],
+      ["Investition", "ab 1.000 €"],
     ],
     pilotCta: "Pilot unverbindlich besprechen",
     fitKicker: "Guter Fit?",
@@ -347,7 +347,7 @@ const copy = {
     pilotFacts: [
       ["Scope", "3 journeys · 1 platform"],
       ["Timeline", "2–4 weeks"],
-      ["Investment", "from €2,000"],
+      ["Investment", "from €1,000"],
     ],
     pilotCta: "Discuss a pilot without obligation",
     fitKicker: "A good fit?",
